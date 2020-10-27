@@ -1,17 +1,34 @@
-## My Project
+# ASK Toolkit Demo Skill
 
-TODO: Fill this README out!
+## What You Will Need
+*  [Amazon Developer Account](http://developer.amazon.com/alexa)
+*  [Visual Studio Code](https://code.visualstudio.com/)
+*  The sample code on [GitHub](https://github.com/alexa/alexa-cookbook/tree/master/feature-demos/skill-demo-toolkit/).
+*  An Alexa device (e.g. Amazon Echo) or the simulator
 
-Be sure to:
+## What you Get
+This is a demo showing how to do code-first Alexa Skills development with the [ASK Toolkit](https://alexa.design/toolkit). It's meant as companion code for [this blog post](https://alexa.design/codefirst) which is deployed as an [Alexa Hosted Skill](https://alexa.design/ahs).
 
-* Change the title in this README
-* Edit your repository description on GitHub
+## Setting Up the Demo
+This code is meant to be used as code snippets as you develop a Hello World skill [in this blog post](https://alexa.design/codefirst). However you can still deply this skill as self hosted following these steps in your command line prompt:
 
-## Security
+1. Clone this project with git
+2. Open a command line prompt in the project root directory and do:
+    - cd source
+    - npm install
+    - npm run buildmodel (optional)
+    - npm run build
+    - cd ../lambda
+    - npm test (optional)
+    - cd ..
+    - ask deploy
 
-See [CONTRIBUTING](CONTRIBUTING.md#security-issue-notifications) for more information.
+## Running the Demo
+Just say or type "Alexa, open Hello World"
+
+## Resources
+* [ASK Toolkit](https://alexa.design/toolkit)
 
 ## License
 
 This library is licensed under the Amazon Software License.
-
